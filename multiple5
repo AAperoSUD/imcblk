@@ -1,23 +1,14 @@
 #!/usr/bin/env python
-a = int(input("a="))
-b = int(input("b="))
-#Entrer a et b
+a= input("a = ") 
+k=int(a)
+#Entier
+b= input("b = ")
+z=int(b)
+#Entrer les bornes 
+valeur=0 
+#La somme
 
-compteur = a
- 
-somme = 0
- 
-while compteur < b:
-	 print (compteur)
-	 if compteur%5==0:
-		 print (compteur)
-		 somme = somme + compteur
-		 compteur=compteur+1
-   
-print (somme)
-   
-
-
-ecrivez un script qui affiche la valeur de la force de gravitation s'exerçant entre deux masses de 10000kg, pour des distances qui
-augmentent suivant une progression géométrique de raison 2, entre deux valeurs de distance. La force de gravitation est régie par la 
-formule : F=6,67.10^-11.m.m'/d²
+for x in range (k,z): #pour x entre les bornes
+  if x%5==0 : #si le reste est égal à 0 alors
+	  valeur=valeur+x #la somme égale à
+print (valeur) #affiche la valeur finale
